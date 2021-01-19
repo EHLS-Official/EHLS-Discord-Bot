@@ -12,6 +12,7 @@ client.on('message', message => {
     if (!message.guild) return; //no commands in DMs
     let args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
+    const cntnt = message.content.slice(config.prefix.length).slice(command.length).trim();
     let isMod = message.member.roles.cache.has(config.modID); //check if the user has a moderator role
 
     //commands
@@ -54,6 +55,14 @@ client.on('message', message => {
             .setDescription(texts.role.description)
             .setColor(config.color);
         message.channel.send(embed);
+    }
+
+    if (command === "embed" && isMod) {
+        const channeltxt = cntnt.split(" ");
+        const channel = message.member.guild.channels.cache.get(channeltxt[0].slice(2, 20));
+        const embedtxt = cntnt.slice(channeltxt[0].length);
+        embed = JSON.parse(embedtxt);
+        channel.send({ embed: embed });
     }
 
     //eval part for the developer to test code from discord
