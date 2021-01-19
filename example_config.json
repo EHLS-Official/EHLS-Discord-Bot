@@ -1,0 +1,8 @@
+{
+    "token": "your discord bot token here",
+    "ownerID": "developer's id",
+    "prefix": "bot prefix",
+    "modID": "moderator _role_ id",
+    "icon": "URL of the picture you wish to use in embeds",
+    "color": "default embed color"
+}
