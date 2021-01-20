@@ -10,6 +10,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (!message.guild) return; //no commands in DMs
+    if (message.author.bot) return; //dont react to other bot's messages
     let args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     const cntnt = message.content.slice(config.prefix.length).slice(command.length).trim();
@@ -54,6 +55,45 @@ client.on('message', message => {
             .setTitle(texts.role.title)
             .setDescription(texts.role.description)
             .setColor(config.color);
+        message.channel.send(embed);
+    }
+
+    if (command === "media" && isMod) {
+        message.delete();
+        embed = new MessageEmbed()
+            .setThumbnail(texts.media.twitch.icon)
+            .setTitle(texts.media.twitch.title)
+            .setDescription(texts.media.twitch.description)
+            .setURL(texts.media.twitch.url)
+            .setColor(texts.media.twitch.color);
+        message.channel.send(embed);
+        embed = new MessageEmbed()
+            .setThumbnail(texts.media.instagram.icon)
+            .setTitle(texts.media.instagram.title)
+            .setDescription(texts.media.instagram.description)
+            .setURL(texts.media.instagram.url)
+            .setColor(texts.media.instagram.color);
+        message.channel.send(embed);
+        embed = new MessageEmbed()
+            .setThumbnail(texts.media.youtube.icon)
+            .setTitle(texts.media.youtube.title)
+            .setDescription(texts.media.youtube.description)
+            .setURL(texts.media.youtube.url)
+            .setColor(texts.media.youtube.color);
+        message.channel.send(embed);
+        embed = new MessageEmbed()
+            .setThumbnail(texts.media.challengermode.icon)
+            .setTitle(texts.media.challengermode.title)
+            .setDescription(texts.media.challengermode.description)
+            .setURL(texts.media.challengermode.url)
+            .setColor(texts.media.challengermode.color);
+        message.channel.send(embed);
+        embed = new MessageEmbed()
+            .setThumbnail(texts.media.trovo.icon)
+            .setTitle(texts.media.trovo.title)
+            .setDescription(texts.media.trovo.description)
+            .setURL(texts.media.trovo.url)
+            .setColor(texts.media.trovo.color);
         message.channel.send(embed);
     }
 

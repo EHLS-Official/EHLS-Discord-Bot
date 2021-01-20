@@ -15,5 +15,42 @@
     "role": {
         "title": "Discord Uloge",
         "description": "<@&791807428843929631> - **Twitch Član** se postaje tako što nas zapratite na našem Twitch profilu i učestvujete aktivno u Streamovima (komentarima, reakcijama, emojiima) dobijate mogućnost:\n- Omogućeno menjanje svog nadimka\n\n<@&791807807741624341> - **Donator** ulogu dobija osoba koja donira (na strimu ili preko PayPal-a) EHLS organizaciji više od **1€** i uz tu ulogu dobijaju:\n- Omogućeno menjanje svog nadimka\n- Omogućeno brisanje i pinovanje poruka\n\n<@&792780530943787048> - **Top Donator** ulogu dobija osoba koja donira (na strimu ili preko PayPal-a) EHLS organizaciji više od **20€** i uz tu ulogu dobijaju:\n- Omogućeno menjanje svog nadimka\n- Omogućeno brisanje i pinovanje poruka\n- Omogućen Priority Speaker (kada priča svi ostali se smanje)\n- Omogućeno prisustvovanje 'staff' kanalu\n\n<@&791847805600923649> - **Kapiten** ulogu dobija osoba koja je vođa ekipe na turniru kako bi lakše obaveštavali timove o turniru\nUz ovu ulogu dobija se mogućnost ulaska u <#791847674449756161>\nJednom kada ekipa više ne učestvuje u turniru ili kada se turnir završi, osobe gube ulogu Kapiten do **idućeg** turnira ili lige\n\n- **Organizacija, Dizajner, Marketing** i **Komentator** ulogu dobija jedino ona osoba kojoj <@&791724603634483210> ili vođa tog tima dodeli to, svaka uloga ima svoju namenu u našem timu, za to postoje posebni kanali, ukoliko želite postati jedan od našeg tima možete se javiti u privatne poruke ili poslati aplikaciju koja stoji u <#794714450703024148> i obavićemo razgovor"
+    },
+    "media": {
+        "twitch": {
+            "color": "#9050fb",
+            "title": "Twitch",
+            "url": "https://www.twitch.tv/ehls_official",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Twitch_Glitch_Logo_Purple.svg/878px-Twitch_Glitch_Logo_Purple.svg.png",
+            "description": "Na Twitchu se prenose svi mečevi trenutnih turnira uživo. Na strimovima mozete da gledate okršaje timova, da slušate naše komentatore i da se družite sa ostalim gledaocima."
+        },
+        "instagram": {
+            "color": "#cc7491",
+            "title": "Instagram",
+            "url": "https://www.instagram.com/ehls_/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png",
+            "description": "Na našoj zvaničnoj Instagram stranici postavljamo najvažnija obaveštenja i informacije iz prve ruke. Podelite našu stranicu sa vašim prijateljima kako bi sto više ljudi saznalo za ovaj projekat i tako se pomoglo sto više ljudi."
+        },
+        "youtube": {
+            "color": "#ff0000",
+            "title": "YouTube",
+            "url": "https://www.youtube.com/channel/UCrW4Abnx9JX9YwVhasxZfYQ",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png",
+            "description": "Na YouTube-u se takođe prenose svi mečevi trenutnih turnira uživo. Takođe, tu možete gledati i najbolje plejove naših takmičara i još mnogo drugih stvari!"
+        },
+        "challengermode": {
+            "color": "#f36f21",
+            "title": "Challengermode",
+            "url": "https://www.challengermode.com/s/EHLS",
+            "icon": "https://challengermode-permanent-assets.azureedge.net/brand-assets/200206/cm_logo_white.jpg",
+            "description": "Platforma na kojoj se igraju sva takmičenja Esport Humanitarne Lige Srbije. Takođe i mesto gde su sve detaljne informacije o našoj organizaciji i kako informacije o svim prethodnim turnirima tako i o tome koji je trenutni turnir i sve detaljne informacije o njemu."
+        },
+        "trovo": {
+            "color": "#2abb77",
+            "title": "Trovo",
+            "url": "https://trovo.live/EHLS",
+            "icon": "https://juicyjoneshq.com/wp-content/uploads/2020/07/trovo-logo-1024x963.png",
+            "description": "Naš kanal na Trovo platformi **ne služi** za strimovanje zvaničnih EHLS mečeva. Ovde mozete da se družite sa vođama organizacije i učestvujete u raznim giveaway-ovima a čak i licno igrate CS:GO sa organizacijom!"
+        }
     }
 }
