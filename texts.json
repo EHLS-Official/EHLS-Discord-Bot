@@ -24,6 +24,32 @@
         "title": "Pomoć za moderatore",
         "description": "**Dostupne komande:**\n\n• dobrodosli\n• aplikacija\n• donacije\n• pravila\n• media\n• role\n• embed #kanal [{generisan kod}](https://dj0rdj3.ddns.net/embed/)"
     },
+    "oturniru": {
+        "first": {
+            "title": "INFORMACIJE I PRAVILA EHLS TURNIRA",
+            "description": "*Detaljne informacije o pojedinačnim turnirima možete naći na stranicama istih na [ovom](https://challengermode.com/s/EHLS) Challengermode spejsu*\n\n**Opšte informacije i konfiguracije turnira**\n\nSvaki zvanični turnir EHLS je namenjen sakupljanju novčanih sredstava za lečenje neke životno ugrožene osbone ili za pomoć socijalno ugroženim zajednicama.\n\nTurniri se sastoje iz dve faze - grupna faza i play-off faza.\n\n•Maksimalan broj timova je 32\n•Mod igre je bomb defusal 5v5\n•U grupnoj fazi se igra best of 1, u plej-offovima best of 3 i u finalu best of 5\n•U map poolu su de_dust2, de_inferno, de_mirage, de_nuke, de_overpass, de_vertigo i de_train\n•Serveri su u Nemačkoj, Poljskoj, Francuskoj, Švedskoj, Britaniji, Španiji i Turskoj\n•Anti-čit sistem je ugrađen u same Challengermode servere\n•Grupna faza se igra sa po 4 tima u 8 grupa, svi timovi unutar grupe se sreću jednom\n•Iz svake grupe po dva tima prolaze u plej-off\n•Nakon polufinala se odigravaju mečevi za 3. i 4. mesto\n•Pozicija timova u grupama i četvrtfinalu će nasumično biti odabrana od strane Challengermode platforme\n•Banovanje mapa se vrši po Challengermode veto-u na sledeći način: Tim A - ban, Tim B - ban, Tim A - ban, Tim B - ban, Tim A - ban, Tim B - ban, poslednja mapa se izabira za igru\n\nSvaki tim koji se ne pojavi, preda, ili im nedostaje igrač u vreme meča će u grupnoj fazi dobiti 1 gubitak, dok će u eliminacionoj (play-off) fazi biti diskvalifikovan iz takmičenja bez izuzetaka.\n-Ukoliko se ekipa dogovori da se meč pomeri, njihov meč će biti pomeren, ali ne i strimovan."
+        },
+        "second": {
+            "title": "Uplate i prijavljivanje",
+            "description": "Učešće u turnirima je u vidu donacije preko SMS poruke, uplatnice ili PayPal računa.\n\nNakon što tim uspešno donira novac, potrebno je da se kapiten javi organizaciji turnira u privatne poruke na Diskordu sa dokazom uplate - skrinšot ili slika uplatnice/PayPal recepta.\n\nKada organizacija potvrdi da je novac doniran, potrebno je da svaki igrač tima napravi nalog na Challengermode platformi. Kapiten je u obavezi da napravi tim (desni meni > your teams > + dugme) i da ubaci ostale igrače. Kada je tim napravljen, organizacija će pozvati tim u turnir."
+        },
+        "third": {
+            "title": "Potvrđivanje učešća u turniru i proces ulaska u igru",
+            "description": "*Detaljnije na [ovom linku](https://help.challengermode.com/en/articles/608076-how-to-play-a-cs-go-tournament)*\n\nKada je tim pozvan u turnir, potrebno je da kapiten tima prihvati poziv na glavnoj stranici turnira klikom na dugme 'Accept invitation' najkasnije 48 sati pre početka turnira. Kapa kapiten prihvati poziv, pojaviće se meni gde može da selektuje sve igrače tima, pet izmena i jednog trenera i da ih tako automatski ubaci u turnir.\n\nNakon što kapiten prihvati poziv i ubaci sve igrače u turnir, svi igrači trebaju potvrde učešće. Dugme za potvrdu učešća se otključava 48 sati pred početak turnira i svi igrači svake ekipe moraju da kliknu na dugme 'Confirm participation' kako bi turnir mogao da počne. Timovi imaju 24 sata vremena da potvrde učešće.\n\n**24 časa pred početak turnira Challengermode će nasumično odabrati strukture grupa i raspored meceva.\n\n**Pet minuta pred početak svog meča, svi igrači trebaju da budu na stranici turnira i da kliknu na dugme 'Go to lobby' kako bi bili naznačeni kao spremni za meč i kako bi se započelo banovanje mapa i servera.\n\nKada se odredi igrajuća mapa, igrači imaju 10 minuta da uđu u igru. Tim koji nema sve igrače prisutne na serveru, u zavisnosti da li je grupna faza ili eliminaciona, pisaće mu se poraz ili će biti eliminisan.\n\n**Pomeranje vremena meča je moguće isključivo u slučaju da nije moguće naći zamenu za igrače a da se takođe i protivnički tim slaže sa pomeranjem vremena meča. U tom slučaju strimovanje tog meča nije moguće ukoliko se uklapa sa satnicom nekog drugog meča!**"
+        },
+        "fourth": {
+            "title": "Nagrade",
+            "description": "Nagrade su u vidu poena za rang listu u EHLS sezoni, i dodeljuju se na sledeći način:\n\n1. Mesto - 60 poena\n2. Mesto - 45 poena\n3. Mesto - 25 poena\n ***+ Dodatnih 10 bodova ekipi sa najboljim play-om turnira***"
+        },
+        "fifth": {
+            "title": "Strimovanje",
+            "description": "Svaki meč će biti strimovan i komentarisan na zvaničnom profilu EHLS na platformi [Twitch](https://www.twitch.tv/ehls_official) i [Youtube Kanalu](https://www.youtube.com/channel/UCrW4Abnx9JX9YwVhasxZfYQ). Prijavom na turnir dozvoljavate nam da javno pokazujemo vaš logo tima kao i vaša in-game imena."
+        },
+        "sixth": {
+            "title": "VAŽNA NAPOMENA",
+            "description": "Tim može da se prijavi u turnir ako i samo ako ima najmanje 3 igrača u glavnom rosteru koji žive u Republici Srbiji (naravno, uključujući i KiM), a ostali igrači mogu da budu iz srpske dijaspore"
+        }
+    },
     "media": {
         "twitch": {
             "color": "#9050fb",

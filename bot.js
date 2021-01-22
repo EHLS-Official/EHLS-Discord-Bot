@@ -90,6 +90,18 @@ client.on('message', message => {
         });
     }
 
+    if (command === "oturniru" && isMod) {
+        message.delete();
+        const embeds = ["first", "second", "third", "fourth", "fifth", "sixth"];
+        embeds.forEach(m => {
+            embed = new MessageEmbed()
+                .setTitle(eval(`texts.oturniru.${m}.title`))
+                .setDescription(eval(`texts.oturniru.${m}.description`))
+                .setColor(config.color);
+            message.channel.send(embed);
+        });
+    }
+
     if (command === "embed" && isMod) {
         const channeltxt = cntnt.split(" ");
         const channel = message.member.guild.channels.cache.get(channeltxt[0].slice(2, 20));
