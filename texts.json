@@ -20,6 +20,10 @@
         "title": "DONIRAJ I PODRŽI PROJEKAT",
         "description": "Ako ti se sviđa projekat i želeo bi da pomogneš pri poboljšanju rada EHLS tima, mozes to da uradiš preko donacije na račun tima!\n\nSav novac koji dođe na račun će biti iskorišćen za domen i host sajta, reklame za socijalne mreže i za licence. Ostatak novca će biti prosleđen u humanitarne svrhe.\n\n[PayPal račun](https://streamlabs.com/ehls-esporthumanitarnaligasrbije)\n[Donacija putem SMS poruke](https://keepme.live/x/u/ehls)"
     },
+    "help": {
+        "title": "Pomoć za moderatore",
+        "description": "**Dostupne komande:**\n\n• dobrodosli\n• aplikacija\n• donacije\n• pravila\n• media\n• role\n• embed #kanal [{generisan kod}](https://dj0rdj3.ddns.net/embed/)"
+    },
     "media": {
         "twitch": {
             "color": "#9050fb",

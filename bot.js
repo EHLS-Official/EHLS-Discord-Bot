@@ -20,8 +20,8 @@ client.on('message', message => {
     if (command === "help" && isMod) {
         embed = new MessageEmbed()
             .setThumbnail(config.icon)
-            .setTitle("Pomoć za moderatore")
-            .setDescription("**Dostupne komande:**\n\n• dobrodosli\n• aplikacija\n• donacije\n• pravila\n• media\n• role\n• embed #kanal [{generisan kod}](https://dj0rdj3.ddns.net/embed/)")
+            .setTitle(texts.help.title)
+            .setDescription(texts.help.description)
             .setColor(config.color);
         message.channel.send(embed);
     }
