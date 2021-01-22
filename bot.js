@@ -17,6 +17,15 @@ client.on('message', message => {
     let isMod = message.member.roles.cache.has(config.modID); //check if the user has a moderator role
 
     //commands
+    if (command === "help" && isMod) {
+        embed = new MessageEmbed()
+            .setThumbnail(config.icon)
+            .setTitle("Pomoć za moderatore")
+            .setDescription("**Dostupne komande:**\n\n• dobrodosli\n• aplikacija\n• donacije\n• pravila\n• media\n• role\n• embed #kanal [{generisan kod}](https://dj0rdj3.ddns.net/embed/)")
+            .setColor(config.color);
+        message.channel.send(embed);
+    }
+
     if (command === "dobrodosli" && isMod) {
         message.delete();
         embed = new MessageEmbed()
@@ -58,43 +67,27 @@ client.on('message', message => {
         message.channel.send(embed);
     }
 
-    if (command === "media" && isMod) {
+    if (command === "donacije" && isMod) {
         message.delete();
         embed = new MessageEmbed()
-            .setThumbnail(texts.media.twitch.icon)
-            .setTitle(texts.media.twitch.title)
-            .setDescription(texts.media.twitch.description)
-            .setURL(texts.media.twitch.url)
-            .setColor(texts.media.twitch.color);
+            .setTitle(texts.donacije.title)
+            .setDescription(texts.donacije.description)
+            .setColor(config.color);
         message.channel.send(embed);
-        embed = new MessageEmbed()
-            .setThumbnail(texts.media.instagram.icon)
-            .setTitle(texts.media.instagram.title)
-            .setDescription(texts.media.instagram.description)
-            .setURL(texts.media.instagram.url)
-            .setColor(texts.media.instagram.color);
-        message.channel.send(embed);
-        embed = new MessageEmbed()
-            .setThumbnail(texts.media.youtube.icon)
-            .setTitle(texts.media.youtube.title)
-            .setDescription(texts.media.youtube.description)
-            .setURL(texts.media.youtube.url)
-            .setColor(texts.media.youtube.color);
-        message.channel.send(embed);
-        embed = new MessageEmbed()
-            .setThumbnail(texts.media.challengermode.icon)
-            .setTitle(texts.media.challengermode.title)
-            .setDescription(texts.media.challengermode.description)
-            .setURL(texts.media.challengermode.url)
-            .setColor(texts.media.challengermode.color);
-        message.channel.send(embed);
-        embed = new MessageEmbed()
-            .setThumbnail(texts.media.trovo.icon)
-            .setTitle(texts.media.trovo.title)
-            .setDescription(texts.media.trovo.description)
-            .setURL(texts.media.trovo.url)
-            .setColor(texts.media.trovo.color);
-        message.channel.send(embed);
+    }
+
+    if (command === "media" && isMod) {
+        message.delete();
+        const medias = ["twitch", "instagram", "youtube", "challengermode", "trovo"];
+        medias.forEach(m => {
+            embed = new MessageEmbed()
+                .setThumbnail(eval(`texts.media.${m}.icon`))
+                .setTitle(eval(`texts.media.${m}.title`))
+                .setDescription(eval(`texts.media.${m}.description`))
+                .setURL(eval(`texts.media.${m}.url`))
+                .setColor(eval(`texts.media.${m}.color`));
+            message.channel.send(embed);
+        });
     }
 
     if (command === "embed" && isMod) {
