@@ -11,6 +11,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (!message.guild) return; //no commands in DMs
     if (message.author.bot) return; //dont react to other bot's messages
+    if (message.content.substring(0, config.prefix.length) !== config.prefix) return; //match the prefix
     let args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     const cntnt = message.content.slice(config.prefix.length).slice(command.length).trim();
@@ -78,7 +79,7 @@ client.on('message', message => {
 
     if (command === "media" && isMod) {
         message.delete();
-        const medias = ["twitch", "instagram", "youtube", "challengermode", "trovo"];
+        const medias = ["youtube", "twitter", "facebook", "instagram", "challengermode"];
         medias.forEach(m => {
             embed = new MessageEmbed()
                 .setThumbnail(eval(`texts.media.${m}.icon`))
@@ -108,6 +109,25 @@ client.on('message', message => {
         const embedtxt = cntnt.slice(channeltxt[0].length);
         embed = JSON.parse(embedtxt);
         channel.send({ embed: embed });
+    }
+
+    if (command === "everyone" && isMod) {
+        const channeltxt = cntnt.split(" ");
+        const channel = message.member.guild.channels.cache.get(channeltxt[0].slice(2, 20));
+        channel.send("@everyone");
+    }
+
+    if (command === "poll" && isMod) {
+        embed = new MessageEmbed();
+        message.delete().then(() => {
+            message.channel.send(embed).then(e => {
+                e.edit(embed
+                    .setTitle(`Poll`)
+                    .setColor('#00FF00')
+                    .setDescription(message.content.slice(5)));
+                e.react('👍').then(() => { e.react('👎') });
+            });
+        });
     }
 
     //eval part for the developer to test code from discord
